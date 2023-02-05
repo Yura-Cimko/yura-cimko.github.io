@@ -104,7 +104,7 @@ img {
 }
 
 .or-line {
-	background:url('images/line-bg.png') repeat-x center center;
+	background:url('../images/line-bg.png') repeat-x center center;
 	margin-top:20px;
 	margin-bottom:20px;
 	text-align:center;
@@ -120,7 +120,7 @@ img {
 
 /*HOME PAGE*/
 .home-bg {
-	background:url('images/bg.png') no-repeat center bottom;
+	background:url('../images/bg.png') no-repeat center bottom;
 	background-size:cover;
 }
 
