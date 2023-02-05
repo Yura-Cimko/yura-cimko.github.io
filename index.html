@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>DM Market</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="home-bg">
+            <div class="menu">
+                <a href="/">
+                    <img class="logo" src="images/logo.png" height="40">
+                </a>
+                <div>
+                    <a class="btn login-btn" href="#">Увійти</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="content-left">
+                        <h1>Test test test test</h1>
+                        <p>test test test test test test test test test test test test test test test test test test test test test test test test test test test test </p>
+                        <a class="btn btn-content" href="market.html">Розпочати покупку</a>
+                    </div>
+                    <div class="content-right">
+                        <img src="images/ak.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slider-body">
+                <div class="slide">
+                    <a href="">
+                        <img src="https://cs.money/img/main/slider-items/cs/2.png">
+                        <div class="slide-title">Test name</div>
+                        <div class="slide-price">₴ 500.00</div>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="">
+                        <img src="https://cs.money/img/main/slider-items/cs/2.png">
+                        <div class="slide-title">Test name</div>
+                        <div class="slide-price">₴ 500.00</div>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="">
+                        <img src="https://cs.money/img/main/slider-items/cs/2.png">
+                        <div class="slide-title">Test name</div>
+                        <div class="slide-price">₴ 500.00</div>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="product.html">
+                        <img src="https://cs.money/img/main/slider-items/cs/2.png">
+                        <div class="slide-title">Test name</div>
+                        <div class="slide-price">₴ 500.00</div>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="">
+                        <img src="https://cs.money/img/main/slider-items/cs/2.png">
+                        <div class="slide-title">Test name</div>
+                        <div class="slide-price">₴ 500.00</div>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="">
+                        <img src="https://cs.money/img/main/slider-items/cs/2.png">
+                        <div class="slide-title">Test name</div>
+                        <div class="slide-price">₴ 500.00</div>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="">
+                        <img src="https://cs.money/img/main/slider-items/cs/2.png">
+                        <div class="slide-title">Test name</div>
+                        <div class="slide-price">₴ 500.00</div>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="">
+                        <img src="https://cs.money/img/main/slider-items/cs/2.png">
+                        <div class="slide-title">Test name</div>
+                        <div class="slide-price">₴ 500.00</div>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="">
+                        <img src="https://cs.money/img/main/slider-items/cs/2.png">
+                        <div class="slide-title">Test name</div>
+                        <div class="slide-price">₴ 500.00</div>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="">
+                        <img src="https://cs.money/img/main/slider-items/cs/2.png">
+                        <div class="slide-title">Test name</div>
+                        <div class="slide-price">₴ 500.00</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+		<footer>
+			<div></div>
+		</footer>
+		<div class="modal">
+			<div class="login-form">
+				<div class="login-form-header">
+					<span>Вхід</span>
+					<a class="close-modal" href="#"><img width="12" src="images/close.svg"></a>
+				</div>
+				<form>
+					<label for="login">Логін</label>
+					<input type="email" id="login" required class="field">
+					<label for="pasword">Пароль</label>
+					<input type="password" id="password" required class="field">
+					<button type="submit" class="btn btn-block">Увійти</button>
+				</form>
+				<div class="or-line">
+					<div class="or">або</div>
+				</div>
+				<a href="https://steamcommunity.com/openid/loginform" class="btn btn-block"><img height="13" src="steam.svg"> Увійти через Steam</a>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+		<script>
+			$('.login-btn').click(function(e){
+				e.preventDefault();
+				$('.modal').addClass('visible');
+			});
+			
+			$('.close-modal').click(function(e){
+				e.preventDefault();
+				$(this).closest('.modal').removeClass('visible');
+			});
+		</script>
+    </body>
+</html>
