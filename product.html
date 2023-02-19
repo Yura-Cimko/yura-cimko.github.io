@@ -7,28 +7,53 @@
         <link rel="stylesheet" type="text/css" href="styles/style.css">
     </head>
     <body>
-        <div class="home-bg">
-            <div class="menu">
-                <a href="index.html">
-                    <img class="logo" src="images/logo.png" height="40">
-                </a>
-                <div>
-                    <a class="btn login-btn" href="#">Увійти</a>
-                </div>
+        <div class="menu">
+            <a href="index.html">
+                <img class="logo" src="images/logo.png" height="40">
+            </a>
+            <div>
+                <a class="btn login-btn" href="#">Увійти</a>
             </div>
-            <div class="container">
-                <div class="content">
-                    <div class="content-right">
-                        <img src="images/ak.png">
+        </div>
+
+        <div class="container">
+            <div class="breadcrumbs gray-bg">
+                <a href="index.html">Головна</a>
+                <div class="arrow"></div>
+                <a href="market.html">Маркет</a>
+                <div class="arrow"></div>
+                <span>Oxide Blaze (Minimal Wear)</span>
+            </div>
+            <div class="product-view  gray-bg">
+                <div class="product-img-gallery">
+                    <img src="images/uzi.png">
+                </div>
+                <div class="product-view-details">
+                    <div class="subtitle">MAC-10 / Minimal Wear</div>
+                    <h1>Oxide Blaze (Minimal Wear)</h1>
+                    <div class="product-options">
+                        <div class="option">
+                            <b>Float</b>
+                            <span>0.0979757309</span>
+                        </div>
+                        <div class="option">
+                            <b>Рідкість</b>
+                            <span>Армійського Ґатунку</span>
+                        </div>
+                        <div class="option">
+                            <b>Патерн</b>
+                            <span>832</span>
+                        </div>
                     </div>
-                    <div class="content-left">
-                        <h1>Купуйте найкращі скіни</h1>
-                        <p class="color">Купуйте скіни простіше та швидше.Всі угоди забезпечені методами захисту найвищого рівня. </p>
-                        <a class="btn btn-content" href="market.html">Розпочати покупку</a>
+                    <div class="product-prices">
+                        <div class="old-price">&#8372; 85.00</div>
+                        <div class="new-price">&#8372; 68.00</div>
                     </div>
+                    <a href="cart.html" class="btn btn-block">Додати до кошика</a>
                 </div>
             </div>
         </div>
+        
         <div class="slider">
             <h2>Популярні товари:</h2>
             <div class="slider-body">
@@ -104,45 +129,9 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <h2 class="partner">Наші партнери:</h2>
-            <div class="block-gallery">
-                <div class="block-gallery-item">
-                    <div class="gallery">
-                        <img src="images/blast.jpg">
-                        <img src="images/blast2.png">
-                        <img src="images/blast3.jpg">
-                        <img src="images/blast4.png">
-                    </div>
-                </div>
-                <div class="block-gallery-item">
-                    <div class="gallery">
-                        <img src="images/esl1.png">
-                        <img src="images/esl2.jpg">
-                        <img src="images/esl3.jpg">
-                        <img src="images/esl4.jpg">
-                    </div>
-                </div>
-                <div class="block-gallery-item">
-                    <div class="gallery">
-                        <img src="images/navi1.jpg">
-                        <img src="images/navi2.jpg">
-                        <img src="images/navi3.jpg">
-                        <img src="images/navi4.jpg">
-                    </div>
-                </div>
-                <div class="block-gallery-item">
-                    <div class="gallery">
-                        <img src="images/ast1.jpg">
-                        <img src="images/ast2.jpg">
-                        <img src="images/ast3.jpg">
-                        <img src="images/ast4.png">
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <footer>
-                <div></div>
+            <div></div>
         </footer>
         <div class="modal">
             <div class="login-form">
@@ -163,17 +152,17 @@
                 <a href="https://steamcommunity.com/openid/loginform" class="btn btn-block"><img height="13" src="images/steam.svg"> Увійти через Steam</a>
             </div>
         </div>
-<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-<script>
-        $('.login-btn').click(function(e){
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script>
+            $('.login-btn').click(function (e) {
                 e.preventDefault();
                 $('.modal').addClass('visible');
-        });
+            });
 
-        $('.close-modal').click(function(e){
+            $('.close-modal').click(function (e) {
                 e.preventDefault();
                 $(this).closest('.modal').removeClass('visible');
-        });
-</script>
+            });
+        </script>
     </body>
 </html>
