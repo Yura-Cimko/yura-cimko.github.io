@@ -1,0 +1,178 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <title>DM Market</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+    </head>
+    <body>
+        <div class="menu">
+            <a href="index.html">
+                <img class="logo" src="images/logo.png" height="40">
+            </a>
+            <div>
+                <a class="btn login-btn" href="#">Увійти</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="breadcrumbs gray-bg">
+                <a href="index.html">Головна</a>
+                <div class="arrow"></div>
+                <span>Оформлення замовлення</span>
+            </div>
+            <h1 class="h1">Оформлення замовлення</h1>
+            <div class="checkout">
+                <div class="cart gray-bg">
+                    <div class="cart-item">
+                        <a href="#" class="ci-remove"><img width="20" src="images/close.svg"></a>
+                        <div class="ci-img">
+                            <a href="product.html">
+                                <img src="images/product.png">
+                            </a>
+                        </div>
+                        <div class="ci-details">
+                            <a class="ci-title">AWP | Duality (Minimal Wear)</a>
+                            <div class="ci-subtitle">MW / 0.00833</div>
+                            <div class="cart-options">
+                                <div class="ci-price">&#8372; 3,252.44</div>
+                                <div class="ci-counter">
+                                    <a href="#">-</a>
+                                    <input type="text" class="field" value="1">
+                                    <a href="#">+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <a href="#" class="ci-remove"><img width="20" src="images/close.svg"></a>
+                        <div class="ci-img">
+                            <a href="product.html">
+                                <img src="images/mac-sport.png">
+                            </a>
+                        </div>
+                        <div class="ci-details">
+                            <a class="ci-title">Oxide Blaze (Minimal Wear)</a>
+                            <div class="ci-subtitle">MW / 0.00833</div>
+                            <div class="cart-options">
+                                <div class="ci-price">&#8372; 452.44</div>
+                                <div class="ci-counter">
+                                    <a href="#">-</a>
+                                    <input type="text" class="field" value="1">
+                                    <a href="#">+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-form gray-bg">
+                    <form>
+                        <label>Прізвище</label>
+                        <input type="text" name='surname' class="field">
+                        
+                        <label>Ім'я</label>
+                        <input type="text" name='name' class="field">
+                        
+                        <label>Email</label>
+                        <input type="text" name='email' class="field">
+                        
+                        <label>Телефон</label>
+                        <input type="text" name='phone' class="field" placeholder='+380(__)___-__-__'>
+                        
+                        <label>Steam Account ID</label>
+                        <input type="text" name='steam_id' class="field">
+                        
+                        <label>Метод оплати</label>
+                        <div class='payment'>
+                            <label class='payment-option'>
+                                <input type='radio' name='payment' checked value='mono'>
+                                <img src='images/mono.jpeg'>
+                                <span>Mono</span>
+                            </label>
+                            <label class='payment-option'>
+                                <input type='radio' name='payment' value='privat24'>
+                                <img src='images/privat.jpeg'>
+                                <span>Privat24</span>
+                            </label>
+                            <label class='payment-option'>
+                                <input type='radio' name='payment' value='gpay'>
+                                <img src='images/google-pay.jpeg'>
+                                <span>Google Pay</span>
+                            </label>
+                            <label class='payment-option'>
+                                <input type='radio' name='payment' value='apay'>
+                                <img src='images/apple-pay.svg'>
+                                <span>Apple Pay</span>
+                            </label>
+                        </div>
+                        <div class="total">Разом: &#8372; 3,704.88</div>
+                        <button class='btn btn-block' type='button'>Оформити замовлення</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-center">
+                    DM Market&#8482; Всі права захищені
+                </div>
+                <div class="footer-flex">
+                    <div class="footer-left">
+                        <a href="tel:+380971234567"><img width="20" src="images/phone.svg">+3(8097) 123-45-67</a>
+                        <a href="mailto:support@dm-market.com"><img width="20" src="images/mail.svg">support@dm-market.com</a>
+                    </div>
+                    <div class="footer-right">
+                        <a href=""><img src="images/facebook.svg"></a>
+                        <a href=""><img src="images/instagram.svg"></a>
+                        <a href=""><img src="images/twitter.svg"></a>
+                        <a href=""><img src="images/telegram.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal">
+            <div class="login-form">
+                <div class="login-form-header">
+                    <span>Вхід</span>
+                    <a class="close-modal" href="#"><img width="12" src="images/close.svg"></a>
+                </div>
+                <form>
+                    <label for="login">Логін</label>
+                    <input type="email" id="login" required class="field">
+                    <label for="pasword">Пароль</label>
+                    <input type="password" id="password" required class="field">
+                    <button type="submit" class="btn btn-block">Увійти</button>
+                </form>
+                <div class="or-line">
+                    <div class="or">або</div>
+                </div>
+                <a href="https://steamcommunity.com/openid/loginform" class="btn btn-block"><img height="13" src="images/steam.svg"> Увійти через Steam</a>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script>
+            $('.login-btn').click(function (e) {
+                e.preventDefault();
+                $('.modal').addClass('visible');
+            });
+
+            $('.close-modal').click(function (e) {
+                e.preventDefault();
+                $(this).closest('.modal').removeClass('visible');
+            });
+
+            $('.show-mobile-filter').click(function(e) {
+                e.preventDefault();
+                $('.filters').addClass('opened');
+            });
+            
+            $('.close-mobile-filter').click(function(e) {
+                e.preventDefault();
+                $('.filters').removeClass('opened');
+            })
+            
+        </script>
+    </body>
+</html>
